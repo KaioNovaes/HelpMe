@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="icon" href="assets/img/favicon-32x32.png" />
     <title>Login - HelpMe</title>
@@ -29,9 +30,19 @@
                         <input id="email" type="email" name="email" placeholder="Digite seu E-mail" required />
                     </div>
                     <div class="input-box">
-                        <label for="password">Senha:</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required />
-                    </div>
+                        <label for="user-password">Senha:</label>
+                        <div class="password-container">
+                            <input id="user-password" type="password" name="password" placeholder="Digite sua senha" required />
+                            <button type="button" class="toggle-password-visibility" aria-label="Mostrar ou ocultar senha">
+                                🔒
+                            </button>
+                        </div>
+                        <p>Esqueceu a senha? <a href="recuperar-senha.html">Clique aqui</a></p>
+                    </div>                    
+                </div>
+
+                <div class="blue-button">
+                    <button><a href="chamado.html">ACESSAR</a></button>
                 </div>
 
                 <div class="social-login">
@@ -46,21 +57,14 @@
                     </div>
                 </div>
 
-                <div class="login-button">
-                    <button><a href="chamado.html">ACESSAR</a></button>
-                </div>
-
                 <div class="signup-link">
-                    <p>Não tem uma conta? <a href="cadastro.html">Entre aqui</a></p>
-                </div>
-                <div class="signup-link">
-                    <p>
-                        Esqueceu a senha? <a href="recuperar_senha.html">Clique aqui</a>
-                    </p>
+                    <p>Não tem uma conta? <a href="cadastro.html"> Cadastre-se aqui</a></p>
                 </div>
             </form>
         </div>
     </div>
+    
+    <script src="assets/togglePasswordVisibility.js"></script>
 </body>
 
 </html>

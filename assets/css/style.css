@@ -25,7 +25,6 @@
     padding: 1rem;
     border-bottom: 2px solid #ccc; 
 }
-
 .form-image img {
     max-width: 30%; 
     height: auto; 
@@ -46,38 +45,38 @@
     display: flex;
     justify-content: space-between;
 }
-
 .form-header .title {
     display: flex; 
     justify-content: center; 
     align-items: center;
     width: 100%;
 }
+
 /* Para os botões de todas as páginas, todos são o mesmo, so muda o texto */
-.login-button {
+.blue-button {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.login-button button{
+.blue-button button{
     border: none;
     background-color: #0867F5;
     padding: 0.4rem 1rem;
     border-radius: 50px;
     cursor: pointer;
     width: 30%;
+    padding: 15px;
 }
-
-.login-button button:hover {
+.blue-button button:hover {
     background-color: #0855c9;
 }
-
-.login-button button a {
+.blue-button button a {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
 }
+
 /* Aqui é para os inputs de todas as páginas */
 .input-group {
     display: flex; 
@@ -95,106 +94,75 @@
     margin-bottom: 1.1rem;
     width: 100%; 
 }
-
 .input-box input {
     width: 100%; 
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     box-shadow: 1px 1px 6px #0000001c;
     background-color: #fff; 
+    font-style: italic;
 }
-
-#descricao {
-    width: 100%;
-    height: 150px;
-    padding: 1rem 1.5rem; 
-    font-size: 1rem; 
-    border-radius: 100px; 
-    resize: none;
+.input-box  a {
+    text-decoration: none;
+    color: #0867F5;
+    font-weight: 400;
+    font-size: 12px;
+}
+.input-box  p {
+    color: #C7C7C7;
+    font-size: 12px;
 }
 
 .input-box input:hover {
     background-color: #eeeeeee5;
 }
-
 .input-box input:focus-visible{
     outline: 1px solid #0867F5;
 }
-
 .input-box label {
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
 }
-
 .input-box input::placeholder{
     color: #52525275;
 }
 
-/* Aqui é para os botões do facebook e do google */
-.social-login {
-    margin: 1.5rem 0;
-    text-align: center;
-}
-
-.social-login p {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 0.5rem;
-}
-
-
-.social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.social-buttons button {
+.password-container {
     display: flex;
     align-items: center;
-    padding: 0.6rem 1.2rem;
+    position: relative;
+}
+.password-container input {
+    flex: 1;
+    padding-right: 2.5rem;
+}
+.password-container button {
+    position: absolute;
+    right: 1rem;
+    background: none;
     border: none;
-    border-radius: 30px;
     cursor: pointer;
-    font-weight: bold;
-    background-color: #444;
-    color: #fff;
-    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+.password-container button:hover {
+    color: #000;
 }
 
-.social-buttons button img {
-    width: 20px;
-    height: 20px;
-}
-
-.social-buttons .google-btn {
-    background-color: #db4437;
-}
-
-.social-buttons .facebook-btn {
-    background-color: #3b5998;
-}
-
-.social-buttons button:hover {
-    opacity: 0.8;
-}
 
 
 .signup-link {
     text-align: center;
     margin-top: 1rem;
 }
-
 .signup-link a {
     text-decoration: none;
     color: #0867F5;
     font-weight: 600;
 }
-
 .signup-link a:hover {
     text-decoration: underline;
 }
@@ -214,16 +182,13 @@
     text-align: left;
     border: 1px solid #ddd;
   }
-  
   .data-table th {
     background-color: #f4f4f4;
     font-weight: bold;
   }
-  
   .data-table tr:nth-child(even) {
     background-color: #f9f9f9;
   }
-  
   .data-table tr:hover {
     background-color: #cccccc;
   }
@@ -241,7 +206,6 @@
     background-color: #4CAF50;
     color: white;
   }
-  
   .btn-editar:hover {
     background-color: #45a049;
   }
@@ -250,8 +214,32 @@
     background-color: #f44336;
     color: white;
   }
-  
   .btn-deletar:hover {
     background-color: #e53935;
-  }
+}
+
+.back-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.back-button:hover {
+    background-color: #333; 
+}
+.back-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    user-select: none;
+}
+
   

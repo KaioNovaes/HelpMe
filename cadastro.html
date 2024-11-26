@@ -17,6 +17,11 @@
         <div class="form">
             <form action="#">
                 <div class="form-header">
+                    <div class="back-button">
+                        <a href="login.html">
+                            <span class="arrow">&#8592;</span>
+                        </a>
+                    </div>
                     <div class="title">
                         <h1>Cadastro</h1>
                     </div>
@@ -33,20 +38,36 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha:</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required />
-                    </div>
+                        <label for="user-password">Senha:</label>
+                        <div class="password-container">
+                            <input id="user-password" type="password" name="password" placeholder="Digite sua senha" required />
+                            <button type="button" class="toggle-password-visibility" aria-label="Mostrar ou ocultar senha">
+                                🔒
+                            </button>
+                        </div>
+                    </div> 
                     <div class="input-box">
-                        <label for="password">Confirme sua senha:</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required />
+                        <label for="user-password">Confirme sua senha:</label>
+                        <div class="password-container">
+                            <input id="user-password" type="password" name="password" placeholder="Confirme sua senha" required />
+                            <button type="button" class="toggle-password-visibility" aria-label="Mostrar ou ocultar senha">
+                                🔒
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+                    <div class="blue-button">
+                        <button><a href="#">CADASTRAR</a></button>
                     </div>
-                </div>
-                <div class="login-button">
-                    <button><a href="#">CADASTRAR</a></button>
-                </div>
+
+                    <!-- <div class="signup-link">
+                        <p>Já possui uma conta? <a href="login.html">Entre aqui</a></p>
+                    </div> -->
             </form>
         </div>
     </div>
+    
+    <script src="assets/togglePasswordVisibility.js"></script>
 </body>
 
 </html>
