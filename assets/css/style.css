@@ -87,6 +87,9 @@
     width: 100%;
     margin: 0 auto; 
 }
+.input-group.operador {
+   width: 75%; 
+}
 
 .input-box {
     display: flex;
@@ -128,6 +131,9 @@
 }
 .input-box input::placeholder{
     color: #52525275;
+}
+.input-box.operador {
+    margin-bottom: 5px;
 }
 
 .password-container {
